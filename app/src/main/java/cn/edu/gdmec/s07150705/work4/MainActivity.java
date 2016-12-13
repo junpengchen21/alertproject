@@ -1,10 +1,9 @@
 package cn.edu.gdmec.s07150705.work4;
 
 import android.content.DialogInterface;
+import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -22,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         tv1= (TextView) this.findViewById(R.id.textView);
         Button button1= (Button) this.findViewById(R.id.bt1);
         Button button2 = (Button) this.findViewById(R.id.bt2);
-        Button button3 = (Button) this.findViewById(R.id.bt3);
+
         Button button4 = (Button) this.findViewById(R.id.bt4);
         Button button5= (Button) this.findViewById(R.id.bt5);
         Button button6= (Button) this.findViewById(R.id.bt6);
@@ -37,9 +36,8 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.bt2:
                         dialog2();
                         break;
-                    case R.id.bt3:
-                        dialog3();
-                        break;
+
+
                     case R.id.bt4:
                         dialog4();
                         break;
@@ -57,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
         };
         button1.setOnClickListener(listener);
         button2.setOnClickListener(listener);
-        button3.setOnClickListener(listener);
+
         button4.setOnClickListener(listener);
         button5.setOnClickListener(listener);
         button6.setOnClickListener(listener);
